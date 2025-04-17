@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Shield, Map, Search, Leaf, Building, Alarm } from 'lucide-react';
+import { Shield, Map, Search, Leaf, Building, Bell } from 'lucide-react';
 import { Scenario } from '@/lib/droneData';
 import { cn } from '@/lib/utils';
 
@@ -28,7 +28,7 @@ const ScenarioSelector: React.FC<ScenarioSelectorProps> = ({
       case 'building':
         return <Building className="h-6 w-6 text-drone-primary" />;
       case 'alarm':
-        return <Alarm className="h-6 w-6 text-drone-primary" />;
+        return <Bell className="h-6 w-6 text-drone-primary" />; // Changed from Alarm to Bell
       default:
         return <Shield className="h-6 w-6 text-drone-primary" />;
     }
